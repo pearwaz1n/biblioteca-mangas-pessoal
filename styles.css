@@ -1,0 +1,140 @@
+body{
+    background-color: #121212;
+    color: #E0E0E0;
+}
+header.principal {
+    background-color: #1E1E1E;
+    color: #FFFFFF; 
+    padding: 20px;
+    margin-top: 0; 
+    text-align: center;
+    margin-bottom: 50px; 
+}
+div.Container {
+    background-color: #414040;
+    color: #E0E0E0; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); 
+    width: 300px;
+    border-radius: 12px; 
+    padding-bottom: 20px; 
+    overflow: hidden;
+}
+img{
+    display: block;
+    margin: 0 auto; 
+    width: 60%; 
+    height: auto;
+    border-radius: 8px;
+}
+div.info-livro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.botoes-info{
+    justify-content: center;
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+div.botoes-info button {
+    background-color: #6200EA;
+    color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+button.adicionar{
+    background-color: #6200EA;
+    color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+div.estante-mangas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));   /* cria colunas do  e quebra a linha sozinho nao esquecer */
+    gap: 10px; 
+    padding: 20px;
+    max-width: 1200px; 
+    margin: 0 auto;
+    justify-items:left;
+}
+.rodape{
+    margin-top: 0 auto;
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); 
+    z-index: 1000; 
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-conteudo {
+    background-color: #1E1E1E; 
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+
+.fechar-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fechar-modal:hover {
+    color: #6200EA;
+}
+
+.modal-conteudo label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.modal-conteudo input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    box-sizing: border-box;
+}
+
+button.salvar {
+    width: 100%;
+    margin-top: 25px;
+    background-color: #6200EA;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
