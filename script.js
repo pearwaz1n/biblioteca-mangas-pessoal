@@ -61,7 +61,7 @@ function lerFormulario() {
         autor: autor.value,
         genero: genero.value,
         status: status.value,
-        capitulo: parseInt(capitulos.value) || 0, // garante que capítulo é um numero (wur dur)
+        capitulo: parseInt(capitulos.value) || 0, // garante que capítulo é um numero 
         foto: foto.value,
     };
 }
@@ -89,7 +89,7 @@ formManga.addEventListener("submit", e => {
         mangasSalvos[index] = data;
         idEditando = null;
     } else {
-        // Cria um ID único baseado na data (?)
+        // Cria um ID único baseado na data 
         data.id = Date.now();
         mangasSalvos.push(data);
     }
@@ -139,7 +139,7 @@ estante.addEventListener("click", e => {
         localStorage.setItem("meusMangas", JSON.stringify(mangasSalvos));
         atualizarTela();
     if (e.target.classList.contains("btn-remover") || e.target.textContent === "Remover") {
-        // cnofirmacao de excluir
+    
         const confirmacao = confirm("Tem certeza que deseja excluir esta obra da sua estante?");
         
         if (confirmacao) { // se for sim remove
